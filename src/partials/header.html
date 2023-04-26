@@ -6,7 +6,7 @@
   <body>
     <header class="header">
       <div class="container flex">
-        <a href="" class="logo link">
+        <a href="#" class="logo link">
           <img
             class="img_logo"
             src="./images/header/logo_intertool.png"
@@ -71,7 +71,7 @@
           </li>
         </ul>
       </div>
-      <div class="container">
+      <div class="container search_header">
         <button
           type="button"
           class="navigation__button-menu"
@@ -79,11 +79,7 @@
           aria-controls="menu-conteiner"
           data-menu-button
         >
-          <svg
-            width="21"
-            height="12"
-            aria-label="Переключатель мобильного меню"
-          >
+          <svg aria-label="Переключатель мобильного меню" class="button_svg">
             <use
               class="icon-cross"
               href="./images/header/symbol-defs.svg#icon-close"
@@ -94,6 +90,17 @@
             ></use>
           </svg>
         </button>
+        <div class="input__wrapper">
+          <input type="text" class="input" placeholder="Поиск по сайту" />
+          <svg class="input__icon">
+            <use href="./images/icon-defs.svg#icon-search"></use>
+          </svg>
+        </div>
+        <a href="#" class="icons-catalog link">
+          <svg class="catalog_svg">
+            <use href="./images/icon-defs.svg#icon-catalog"></use>
+          </svg>
+        </a>
       </div>
     </header>
   </body>
