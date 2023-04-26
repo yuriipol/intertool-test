@@ -5,21 +5,11 @@ body {
   font-size: 20px;
   line-height: 1.4;
   counter-reset: section;
-
-  background-image: url(../images/wave-bg.svg);
-  background-repeat: no-repeat;
-  background-size: auto 500px;
-  @media screen and (min-width: $desktop) {
-    background-size: auto 878px;
-  }
-  &.no-scroll {
-    overflow: hidden;
-  }
 }
 
-.page {
-  overflow: hidden;
-}
+// .page {
+//   overflow: hidden;
+// }
 
 .section {
   padding-top: 70px;

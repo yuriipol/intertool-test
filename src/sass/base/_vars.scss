@@ -1,12 +1,14 @@
 :root {
-  --primary-color: #111518;
-  --secondary-color: #3d3d3d;
-  --primary-text-color: #b9b9b9;
-  --accent-color: #ff6b09;
-  --primary-light: #ffffff;
+  --main-color: #fae719;
+  --second-color: #b8aa14;
+  --background-text-black: #18191a;
+  --surface-dark-color: #2a2a2a;
+  --secondary-text-color: #5d5e5e;
+  --surface-light-color: #f8f8f5;
+  --background-text-white: #ffffff;
 }
 
-$mobile: 480px;
-$mobile-only: 767px;
-$tablet: 768px;
-$desktop: 1440px;
+$mobile: 375px;
+$mobile-only: 1023px;
+$tablet: 1024px;
+$desktop: 1920px;
