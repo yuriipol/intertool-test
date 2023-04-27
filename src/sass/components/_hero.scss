@@ -1,0 +1,9 @@
+.slide {
+  width: 375px;
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1920px;
+  }
+}

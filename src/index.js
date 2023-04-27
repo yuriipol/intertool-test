@@ -1,3 +1,2 @@
 import './js/menu';
-import './js/slider';
-// import './js/input-mask';
+import './js/itc-slider';
