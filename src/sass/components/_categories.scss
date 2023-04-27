@@ -1,0 +1,82 @@
+.title-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 80px;
+  margin-bottom: 28px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+  }
+}
+.title {
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--background-text-black);
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.title_all {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.015em;
+
+  color: var(--second-color);
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.categories {
+  display: grid;
+  max-width: calc(100vw - 10px);
+  grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+  grid-gap: 10px;
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
+  }
+}
+.categoties_item {
+  padding: 13px;
+  background-color: var(--surface-light-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+    cursor: zoom-in;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  }
+}
+.img {
+  margin: 0 auto;
+}
+.discription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--background-text-black);
+}

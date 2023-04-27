@@ -246,6 +246,11 @@
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background-color: var(--second-color);
+    color: var(--background-text-white);
+  }
 }
 .catalog {
   display: flex;
