@@ -140,22 +140,41 @@
 }
 .search_header {
   display: flex;
-
+  align-items: center;
   margin-top: 10px;
+  @media screen and (min-width: $mobile) and (max-width: 1919px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+.input_serch_block {
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @media screen and (min-width: $desktop) {
+    margin-left: 116px;
+  }
 }
 .input__wrapper {
   position: relative;
-  // width: 620px;
 }
 .input {
   padding: 10px 0px 10px 44px;
   font-size: 15px;
   border: none;
-  margin-bottom: 10px;
   outline: none;
   width: 265px;
   transition: border-color 0.1s linear;
   background-color: #f8f8f5;
+  caret-shape: underscore;
+  caret-color: var(--main-color);
+  @media screen and (min-width: $tablet) {
+    width: 812px;
+    height: 44px;
+  }
 }
 
 .input__icon {
@@ -166,6 +185,9 @@
   top: 5px;
   fill: var(--secondary-text-color);
   transition: fill 0.1s linear;
+  @media screen and (min-width: $tablet) {
+    right: 780px;
+  }
 }
 
 .input:focus {
@@ -186,4 +208,92 @@
   &:focus {
     stroke: var(--main-color);
   }
+  @media screen and (min-width: $tablet) {
+    width: 46px;
+    height: 46px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.catalog_svg_icon {
+  display: none;
+  stroke: var(--background-text-black);
+  fill: #f8f8f5;
+  width: 46px;
+  height: 46px;
+  &:hover,
+  &:focus {
+    stroke: var(--main-color);
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.find_button {
+  @media screen and (min-width: $mobile) and (max-width: 1919px) {
+    display: none;
+  }
+  display: block;
+  width: 102px;
+  height: 44px;
+  background-color: var(--main-color);
+  border: none;
+
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.catalog {
+  display: flex;
+  align-items: center;
+}
+.catalog_tovarov {
+  @media screen and (min-width: $mobile) and (max-width: 1919px) {
+    display: none;
+  }
+  display: block;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--background-text-black);
+  &:hover {
+    color: var(--main-color);
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 79px;
+  @media screen and (min-width: $mobile) and (max-width: 1919px) {
+    display: none;
+  }
+}
+
+.discription_contacts {
+  margin-left: 10px;
+  @media screen and (min-width: $mobile) and (max-width: 1919px) {
+    display: none;
+  }
+}
+.contacts__tel {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--background-text-black);
+}
+.dis_contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: var(--background-text-black);
+
+  opacity: 0.5;
 }
