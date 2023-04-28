@@ -10,12 +10,3 @@ body {
 .page {
   overflow: hidden;
 }
-
-.section {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  @media screen and (min-width: $desktop) {
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-}
