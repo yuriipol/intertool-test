@@ -89,7 +89,12 @@
               Дізнавайтеся про нові акції, знижки і спецпропозиції
             </p>
             <div class="input_button_cont">
-              <input type="email" placeholder="E-mail" class="email" />
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="email"
+                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+              />
               <button type="submit" class="footer_button">ПІДПИСАТИСЬ</button>
             </div>
           </li>

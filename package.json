@@ -18,11 +18,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "inputmask": "^5.0.7",
-    "jquery": "^3.6.0",
-    "just-validate": "^3.8.1",
-    "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
