@@ -1,0 +1,59 @@
+.reviews_cont_review {
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+  }
+}
+.reviews_foto {
+  width: 50px;
+}
+.stars {
+  display: flex;
+}
+.reviews_contaner {
+  display: flex;
+
+  align-items: center;
+}
+.name_star {
+  margin-left: 20px;
+}
+.reviews_disc {
+  max-width: 310px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #18191a;
+  margin-top: 30px;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+}
+.date_read {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+.date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+
+  color: #18191a;
+
+  opacity: 0.4;
+}
+.read_link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: var(--second-color);
+}
